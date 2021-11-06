@@ -1,0 +1,20 @@
+# Rneauld Mounia, Christopher Piche-Frattaroli
+# Date 2021-11-06
+ 
+- name: Tâche 2
+  hosts: all
+  tasks:
+        - name: Mise a jour des serveurs !
+         command: ansible ubuntu -m apt -a "upgrade=yes update_cache=yes" -b
+        - name: Reboot servers !
+          command: ansible all -a "reboot" -s
+  
+# Upgrade all the Debian servers.
+#ansible debian -m apt -a "upgrade=yes update_cache=yes" -b
+
+# Upgrade all the CentOS servers.
+#ansible centos -m yum -a "name=* state=latest" -b
+
+# Upgrade all the Fedora servers.
+#ansible fedora -m dnf -a "name=* state=latest" -b 
+        #        "touch fichier1.txt"

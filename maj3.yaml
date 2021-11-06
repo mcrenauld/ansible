@@ -1,0 +1,9 @@
+# Mounia-Cecile Renauld, Christopher Piche-Frattaroli
+# Date
+
+- name: Tâche 2
+  hosts: servers
+  tasks:
+          - name: Upgrade all apt packages
+            apt: upgrade=dist force_apt_get=yes
+

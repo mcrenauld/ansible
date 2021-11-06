@@ -1,0 +1,8 @@
+# Renauld Mounia Christopher Piche-Frattaroli
+# Date
+ 
+- name: Tâche 3
+  hosts: all
+  tasks:
+        - name: Installation Lynx
+          command: "apt-get install lynx"
