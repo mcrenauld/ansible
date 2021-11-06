@@ -1,0 +1,9 @@
+# Mounia-Cecile Renauld, Christopher Piche-Frattaroli
+# Date
+
+- name: Tâche 1
+  hosts: all
+  tasks:
+        - name: Premier essai !
+          command: "touch fichier1.txt"
+
