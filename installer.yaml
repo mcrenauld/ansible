@@ -1,8 +1,10 @@
-# Renauld Mounia Christopher Piche-Frattaroli
-# Date
+# Renauld Mounia-Cecile, Christopher Piche-Frattaroli
+# Date: 2021-11-07
  
-- name: Tâche 3
+- name: Tâche 2
   hosts: all
+  become: true
+  vars_files: ./mdpvoute.yml
   tasks:
         - name: Installation Lynx
-          command: "apt-get install lynx"
+          command: "apt install lynx -y"
